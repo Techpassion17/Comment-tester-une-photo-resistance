@@ -1,0 +1,14 @@
+void setup()
+{
+    //activation du Serial Monitor
+    Serial.begin(9600);  
+}
+
+void loop()
+{
+    //Affichage des valeurs envoyées par la photoresistance
+    Serial.println(analogRead(A0)); 
+
+   //Pause de 1 seconde
+   delay(1000); 
+}
